@@ -1,0 +1,23 @@
+<div class="container mt-4">
+      <form method="GET" action="/savevalues">
+        <div class="form-group">
+          <label for="gas">Gas</label>
+          <input id="gas" name="gas" class="form-control"/>
+          <small class="form-text text-muted">Last value: {{lastValues.gas}}</small>
+        </div>
+
+        <div class="form-group">
+          <label for="electricity">Electricity</label>
+          <input id="electricity" name="electricity" class="form-control"/>
+          <small class="form-text text-muted">Last value: {{lastValues.electricity}}</small>
+        </div>
+
+        <div class="form-group">
+          <label for="water">Water</label>
+          <input id="water" name="water" class="form-control"/>
+          <small class="form-text text-muted">Last value: {{lastValues.water}}</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
