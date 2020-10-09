@@ -8,7 +8,7 @@ function send(tag, value){
     if(tag === "gas"){
         postData = {
             "remoteId": "meersmeter-gas",
-            "remoteName": "Aardgas (1)",
+            "remoteName": "Aardgas",
             "metric": "naturalGasImport",
             "unit": "m³",
             "readingType": "counter",
@@ -19,7 +19,7 @@ function send(tag, value){
     } else if(tag === 'water'){
         postData = {
             "remoteId": "meermseter-water",
-            "remoteName": "Water (1)",
+            "remoteName": "Water",
             "metric": "drinkingWaterImport",
             "unit": "m³",
             "readingType": "counter",
@@ -30,7 +30,7 @@ function send(tag, value){
     } else if (tag === 'electricity'){
         postData = {
             "remoteId": "meersmeter-electricity",
-            "remoteName": "Elektriciteit (1)",
+            "remoteName": "Elektriciteit",
             "metric": "electricityImport",
             "unit": "kWh",
             "readingType": "counter",
