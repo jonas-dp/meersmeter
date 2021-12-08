@@ -4,20 +4,20 @@
     <form method="GET" action="/savevalues">
         <div class="form-group">
           <label for="gas">Gas</label>
-          <input id="gas" name="gas" class="form-control" autocomplete="off" type="number" min="{{lastValues.gas}}" step="0.001"/>
-          <small class="form-text text-muted">Last value: {{lastValues.gas}}</small>
+          <input id="gas" name="gas" class="form-control" autocomplete="off" type="number" step="0.001"/>
+          {{!-- <small class="form-text text-muted">Last value: {{lastValues.gas}}</small> --}}
         </div>
 
         <div class="form-group">
           <label for="electricity">Electricity</label>
-          <input id="electricity" name="electricity" class="form-control" autocomplete="off" type="number" min="{{lastValues.electricity}}" step="0.1"/>
-          <small class="form-text text-muted">Last value: {{lastValues.electricity}}</small>
+          <input id="electricity" name="electricity" class="form-control" autocomplete="off" type="number" step="0.1"/>
+          {{!-- <small class="form-text text-muted">Last value: {{lastValues.electricity}}</small> --}}
         </div>
 
         <div class="form-group">
           <label for="water">Water</label>
-          <input id="water" name="water" class="form-control" autocomplete="off" type="number" min="{{lastValues.water}}" step="0.001"/>
-          <small class="form-text text-muted">Last value: {{lastValues.water}}</small>
+          <input id="water" name="water" class="form-control" autocomplete="off" type="number" step="0.001"/>
+          {{!-- <small class="form-text text-muted">Last value: {{lastValues.water}}</small> --}}
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
